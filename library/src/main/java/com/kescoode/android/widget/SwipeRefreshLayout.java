@@ -405,9 +405,9 @@ public class SwipeRefreshLayout extends ViewGroup {
                                     mAccelerateInterpolator.getInterpolation(
                                             yDiff / mDistanceToTriggerSync));
                             float offsetTop = yDiff;
-                            if (mPrevY > eventY) {
-                                offsetTop = yDiff - mTouchSlop;
-                            }
+                            // if (mPrevY > eventY) {
+                            //     offsetTop = yDiff - mTouchSlop;
+                            // }
                             updateContentOffsetTop((int) (offsetTop));
                             if (mPrevY > eventY && (mTarget.getTop() < mTouchSlop)) {
                                 // If the user puts the view back at the top, we
